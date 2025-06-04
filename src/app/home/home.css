@@ -1,0 +1,40 @@
+.card {
+  background-color: rgba(30, 41, 59, 0.7);
+  border-top: 3px solid #8b5cf6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(124, 58, 237, 0.3);
+}
+
+.team-member {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.team-member-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(30, 27, 75, 0.95), transparent);
+  padding: 1.5rem;
+  transform: translateY(30%);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover .team-member-info {
+  transform: translateY(0);
+}
+
+.feature-icon {
+  background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
+  border-radius: 50%;
+  padding: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
